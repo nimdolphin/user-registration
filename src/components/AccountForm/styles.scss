@@ -4,15 +4,13 @@
 .white-block {
   width: 748px;
   margin: 0 auto;
-  position: relative;
+  margin-top: 40px;
 
   .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    position: absolute;
-    top: 84px;
 
     &-img {
       width: 41.48px;
@@ -29,8 +27,6 @@
   }
 
   .header {
-    position: absolute;
-    top: 173px;
     display: flex;
     flex-direction: column;
 
@@ -54,8 +50,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
-    top: 752px;
     width: 100%;
     margin-top: 27px;
 
@@ -67,8 +61,7 @@
   }
 
   .app-links {
-    position: absolute;
-    top: 886px;
+    margin-top: 50px;
 
     a {
       width: 135px;
@@ -80,24 +73,12 @@
 
 @media (max-width: 768px) {
   .white-block {
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 480px) {
   .white-block {
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .blue-block {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .title {
-      margin-top: 0;
-    }
+    padding-left: 0;
   }
 }

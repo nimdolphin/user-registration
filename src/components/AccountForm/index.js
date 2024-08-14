@@ -20,8 +20,10 @@ const AccountForm = () => {
       <RegistrationForm />
 
       <div className='login-account'>
-        Don’t have an account?
-        <a href='/login'> Log In</a>
+        <p>
+          Don’t have an account?
+          <a href='/login'> Log In</a>
+        </p>
       </div>
 
       <div className='app-links'>

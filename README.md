@@ -25,13 +25,21 @@ git clone https://github.com/username/repo-name.git
 
 Перейдите в директорию проекта и установите все необходимые зависимости:
 
+```bash
 cd user-registration
 npm install
+```
 
 ### 3. Запуск приложения
 
 После установки зависимостей, запустите приложение в режиме разработки:
 
+```bash
 npm start
+```
 
 Приложение будет доступно по адресу http://localhost:3000 в вашем браузере.
+
+Приложение доступно для просмотра на GitHub Pages по следующей ссылке:
+
+[Просмотреть приложение](https://nimdolphin.github.io/user-registration/)

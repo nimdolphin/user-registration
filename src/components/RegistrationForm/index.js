@@ -118,7 +118,7 @@ const RegistrationForm = () => {
               </div>
 
               <div className='form-group'>
-                <label htmlFor='dateOfBirth'>Date of birth (MM/DD/YY)</label>
+                <label htmlFor='dateOfBirth'>Date of birth</label>
                 <Field
                   type='date'
                   id='dateOfBirth'
