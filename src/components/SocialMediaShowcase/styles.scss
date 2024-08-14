@@ -1,0 +1,118 @@
+@import '../../styles/global.scss';
+@import '../../styles/variables.scss';
+
+.blue-block {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(315deg, $primary-blue 0%, $sky-blue 100%);
+  width: 814px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: $primary-white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 593px;
+    height: 593px;
+    background: linear-gradient(315deg, $sky-blue 0%, $primary-blue 100%);
+    border-radius: 50%;
+    left: 50%;
+    top: calc(50% + 65px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .title {
+    position: absolute;
+    font-size: 28px;
+    margin-bottom: 40px;
+    z-index: 3;
+    text-align: center;
+    top: 64px;
+    line-height: 42px;
+    font-family: $font-semibold;
+    width: 554px;
+  }
+
+  .phones-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: calc(10% - 30px);
+
+    .phone {
+      position: absolute;
+    }
+
+    .left-phone {
+      width: 240px;
+      left: calc(50% - 5px);
+      z-index: 1;
+    }
+
+    .right-phone {
+      width: 240px;
+      right: calc(50% - 5px);
+      z-index: 1;
+    }
+
+    .center-phone {
+      width: 332px;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .phones-container {
+    top: calc(20% - 30px);
+  }
+
+  .phones-container .phone {
+    position: absolute;
+  }
+
+  .phones-container .left-phone {
+    left: calc(50% - 5px);
+    z-index: 1;
+  }
+
+  .phones-container .right-phone {
+    right: calc(50% - 5px);
+    z-index: 1;
+  }
+
+  .phones-container .center-phone {
+    z-index: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .phones-container {
+    top: calc(30% - 30px);
+  }
+
+  .phones-container .phone {
+    position: absolute;
+  }
+
+  .phones-container .left-phone {
+    left: calc(50% - 5px);
+    z-index: 1;
+  }
+
+  .phones-container .right-phone {
+    right: calc(50% - 5px);
+    z-index: 1;
+  }
+
+  .phones-container .center-phone {
+    z-index: 2;
+  }
+}

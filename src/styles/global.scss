@@ -1,0 +1,22 @@
+@import './variables.scss';
+$fontPath: '../assets/fonts/';
+
+$font-semibold: 'Poppins-SemiBold';
+$font-regular: 'Poppins-Regular';
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('#{$fontPath}Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('#{$fontPath}Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins-Regular';
+  color: $primary-color;
+  letter-spacing: -0.02em;
+}
